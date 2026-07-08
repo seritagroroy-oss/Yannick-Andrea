@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mariage de Yannick et Andrea</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Montserrat:wght@300;400;600&display=swap"
+        rel="stylesheet">
+
+    <!-- FontAwesome pour les icônes -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="no-scroll">
+    <!-- Écran d'accueil pour forcer le clic et lancer la musique -->
+    <div id="welcome-overlay" class="welcome-overlay">
+        <div class="welcome-content">
+            <h1>Yannick & Andrea</h1>
+            <p>Sont heureux de vous inviter à leur mariage</p>
+            <button id="open-invitation-btn" class="open-btn">Ouvrir l'invitation</button>
+        </div>
+    </div>
+
+    <!-- Affiche originale (Hero Section) -->
+    <header class="hero-image-section">
+        <div class="poster-container fade-in">
+            <!-- Remplacez 'invitation.jpg' par le nom exact de votre image dans le dossier -->
+            <img src="invitation.jpg" alt="Faire-part de mariage de Yannick et Andrea" class="wedding-poster">
+        </div>
+    </header>
+
+
+
+    <!-- RSVP Section -->
+    <section class="rsvp-section">
+        <div class="rsvp-container fade-in">
+            <h2 class="section-title">Confirmez votre présence</h2>
+            <p>Veuillez nous indiquer si vous serez parmi nous pour célébrer ce moment en nous envoyant un message sur
+                WhatsApp.</p>
+            <div class="whatsapp-container">
+                <a href="https://wa.me/2250708058856?text=Bonjour%2C%20je%20confirme%20ma%20pr%C3%A9sence%20au%20mariage%20de%20Yannick%20et%20Andrea%20!"
+                    target="_blank" class="whatsapp-btn">
+                    <i class="fa-brands fa-whatsapp"></i> Confirmer sur WhatsApp
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Audio Player -->
+    <audio id="wedding-audio" autoplay loop>
+        <!-- Placez un fichier nommé 'musique.mp3' dans le même dossier pour que ça marche -->
+        <source src="musique.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Bouton pour contrôler la musique -->
+    <button id="music-toggle" class="music-btn" title="Jouer/Pauser la musique">
+        <i class="fa-solid fa-music"></i>
+    </button>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-message">
+                <p>Soyez beaux, soyez classes...<br>
+                    mais restez vous-mêmes !</p>
+                <i class="fa-regular fa-heart"></i>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
