@@ -75,7 +75,7 @@ h2.section-title {
     height: auto;
     display: block;
     margin-top: -8%;    /* Remonte l'image de 8% (coupe le haut) */
-    margin-bottom: -18%; /* Remonte la section suivante de 18% (coupe le bas) */
+    margin-bottom: -14%; /* Remonte la section suivante de 14% (coupe un peu moins le bas) */
 }
 
 /* --- Flower Falling Animation --- */

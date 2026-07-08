@@ -91,7 +91,7 @@ function startFireflies() {
 
 // --- Gestion de la musique et de l'écran d'accueil ---
 const audio = document.getElementById('wedding-audio');
-audio.volume = 0.3; // Baisse le volume à 30%
+audio.volume = 0.15; // Baisse le volume à 15% (très bas)
 
 const musicBtn = document.getElementById('music-toggle');
 const musicIcon = musicBtn.querySelector('i');
